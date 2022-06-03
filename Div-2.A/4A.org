@@ -12,6 +12,22 @@ The first (and the only) input line contains integer number w (1 ≤ w ≤
 
 Print YES, if the boys can divide the watermelon into two parts, each of them weighing even number of kilos; and NO in the opposite case.
 
+*Examples*
+
+*Input*
+
+#+begin_src txt
+8
+#+end_src
+
+*Output*
+
+#+begin_src txt
+YES
+#+end_src
+
+
+
 #+BEGIN_SRC CPP
 #include<iostream>
 using namespace std ;
