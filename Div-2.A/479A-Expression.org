@@ -69,6 +69,7 @@ int main()
         int ans = max(a + b * c, a * b * c);
         ans = max(ans, a * (b + c));
         ans = max(ans, (a + b) * c);
+        ans = max(ans, a + b + c);
         cout << ans << "\n" ;
     }
     return 0 ;
