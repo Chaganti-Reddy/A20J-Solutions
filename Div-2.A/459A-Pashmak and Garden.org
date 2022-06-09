@@ -1,0 +1,73 @@
+#+title: Pashmak and Garden
+
+Pashmak has fallen in love with an attractive girl called Parmida since one year ago...
+
+Today, Pashmak set up a meeting with his partner in a romantic garden. Unfortunately, Pashmak has forgotten where the garden is. But he remembers that the garden looks like a square with sides parallel to the coordinate axes. He also remembers that there is exactly one tree on each vertex of the square. Now, Pashmak knows the position of only two of the trees. Help him to find the position of two remaining ones.
+
+*Input*
+
+The first line contains four space-separated x1, y1, x2, y2 ( - 100 ≤ x1, y1, x2, y2 ≤ 100) integers, where x1 and y1 are coordinates of the first tree and x2 and y2 are coordinates of the second tree. It's guaranteed that the given points are distinct.
+
+*Output*
+
+If there is no solution to the problem, print -1. Otherwise print four space-separated integers x3, y3, x4, y4 that correspond to the coordinates of the two other trees. If there are several solutions you can output any of them.
+
+*Examples*
+
+*Input*
+
+#+begin_src txt
+0 0 0 1
+
+0 0 1 1
+
+0 0 1 2
+#+end_src
+
+*Output*
+
+#+begin_src txt
+1 0 1 1
+
+0 1 1 0
+
+-1
+#+end_src
+
+*CPP CODE*
+
+#+BEGIN_SRC CPP
+#include <iostream>
+using namespace std;
+
+int main() {
+  int x1, y1, x2, y2, x3, y3, x4, y4;
+  cin >> x1 >> y1 >> x2 >> y2;
+
+  int x_diff = x1 - x2;
+  int y_diff = y1 - y2;
+
+  if (x_diff != 0 and y_diff != 0) {
+    x3 = x1;
+    y3 = y2;
+    x4 = x2;
+    y4 = y1;
+  } else if (x_diff != 0) {
+    x3 = x1;
+    y3 = y1 + abs(x_diff);
+    x4 = x2;
+    y4 = y2 + abs(x_diff);
+  } else {
+    x3 = x1 + abs(y_diff);
+    y3 = y1;
+    x4 = x2 + abs(y_diff);
+    y4 = y2;
+  }
+
+  if (x_diff != 0 and y_diff != 0 and abs(x_diff) != abs(y_diff))
+    cout << -1 << endl;
+  else
+    cout << x3 << " " << y3 << " " << x4 << " " << y4 << endl;
+  return 0;
+}
+#+END_SRC
