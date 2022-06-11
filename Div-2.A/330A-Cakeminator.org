@@ -1,0 +1,82 @@
+#+title: Cakeminator
+
+You are given a rectangular cake, represented as an r × c grid. Each cell either has an evil strawberry, or is empty. For example, a 3 × 4 cake may look as follows:
+
+           [[../assets/330A.png]]
+
+The cakeminator is going to eat the cake! Each time he eats, he chooses a row or a column that does not contain any evil strawberries and contains at least one cake cell that has not been eaten before, and eats all the cake cells there. He may decide to eat any number of times.
+
+Please output the maximum number of cake cells that the cakeminator can eat.
+
+*Input*
+
+The first line contains two integers r and c (2 ≤ r, c ≤ 10), denoting the number of rows and the number of columns of the cake. The next r lines each contains c characters — the j-th character of the i-th line denotes the content of the cell at row i and column j, and is either one of these:
+
+  + '.' character denotes a cake cell with no evil strawberry;
+
+  + 'S' character denotes a cake cell with an evil strawberry.
+
+*Output*
+
+Output the maximum number of cake cells that the cakeminator can eat.
+
+*Examples*
+
+*Input*
+
+#+begin_src txt
+3 4
+S...
+....
+..S.
+#+end_src
+
+*Output*
+
+#+begin_src txt
+8
+#+end_src
+
+#+begin_quote
+For the first example, one possible way to eat the maximum number of cake cells is as follows (perform 3 eats).
+
+         [[../assets/330A-1.png]]
+
+         [[../assets/330A-2.png]]
+
+         [[../assets/330A-3.png]]
+#+end_quote
+
+
+*CPP CODE*
+
+#+BEGIN_SRC C++
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main() {
+  int r, c, row[11] = {0}, col[11] = {0};
+  string s;
+  cin >> r >> c;
+  for (int i = 0; i < r; ++i) {
+    cin >> s;
+    for (int j = 0; j < c; ++j) {
+      if (s[j] == 'S') {
+        row[i] = 1;
+        col[j] = 1;
+      }
+    }
+  }
+  int cakes(0);
+  for (int i = 0; i < r; ++i) {
+    for (int j = 0; j < c; ++j) {
+      if (row[i] == 0 || col[j] == 0) {
+        cakes += 1;
+      }
+    }
+  }
+  cout << cakes << endl;
+  return 0;
+}
+#+END_SRC
