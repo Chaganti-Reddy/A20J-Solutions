@@ -1,0 +1,85 @@
+#+title: Appleman and Easy Task
+
+Toastman came up with a very easy task. He gives it to Appleman, but Appleman doesn't know how to solve it. Can you help him?
+
+Given a n × n checkerboard. Each cell of the board has either character 'x', or character 'o'. Is it true that each cell of the board has even number of adjacent cells with 'o'? Two cells of the board are adjacent if they share a side.
+
+*Input*
+
+The first line contains an integer n (1 ≤ n ≤ 100). Then n lines follow containing the description of the checkerboard. Each of them contains n characters (either 'x' or 'o') without spaces.
+
+*Output*
+
+Print "YES" or "NO" (without the quotes) depending on the answer to the problem.
+
+*Examples*
+
+*Input*
+
+#+begin_src txt
+3
+xxo
+xox
+oxx
+#+end_src
+
+*Output*
+
+#+begin_src txt
+YES
+#+end_src
+
+*Input*
+
+#+begin_src txt
+4
+xxxo
+xoxo
+oxox
+xxxx
+#+end_src
+
+*Output*
+
+#+begin_src txt
+NO
+#+end_src
+
+*CPP CODE*
+
+#+BEGIN_SRC C++
+#include <iostream>
+using namespace std;
+
+int main() {
+  int n;
+  cin >> n;
+  char board[n][n];
+  bool even = true;
+
+  for (int i = 0; i < n; i++)
+    for (int j = 0; j < n; j++)
+      cin >> board[i][j];
+  for (int i = 0; i < n; i++) {
+    int c = 0;
+    for (int j = 0; j < n; j++) {
+      if (i - 1 >= 0 and board[i - 1][j] == 'o')
+        c++;
+      if (i + 1 < n and board[i + 1][j] == 'o')
+        c++;
+      if (j - 1 >= 0 and board[i][j - 1] == 'o')
+        c++;
+      if (j + 1 < n and board[i][j + 1] == 'o')
+        c++;
+      if (c % 2 == 1)
+        even = false;
+    }
+  }
+
+  if (even)
+    cout << "YES" << endl;
+  else
+    cout << "NO" << endl;
+  return 0;
+}
+#+END_SRC
