@@ -2,7 +2,7 @@
 
 Mike is trying rock climbing but he is awful at it.
 
-There are n holds on the wall, i-th hold is at height ai off the ground. Besides, let the sequence ai increase, that is, ai < ai + 1 for all i from 1 to n - 1; we will call such sequence a track. Mike thinks that the track a1, &#x2026;, an has difficulty $d = max<sub>1<=i<=n-1</sub>(a<sub>i+1</sub> - a<sub>i</sub>)$ . In other words, difficulty equals the maximum distance between two holds that are adjacent in height.
+There are n holds on the wall, i-th hold is at height ai off the ground. Besides, let the sequence ai increase, that is, ai < ai + 1 for all i from 1 to n - 1; we will call such sequence a track. Mike thinks that the track a1, &#x2026;, an has difficulty $d = \max_{1<=i<=n-1} (a_{i+1} - a_i)$ . In other words, difficulty equals the maximum distance between two holds that are adjacent in height.
 
 Today Mike decided to cover the track with holds hanging on heights a1, &#x2026;, an. To make the problem harder, Mike decided to remove one hold, that is, remove one element of the sequence (for example, if we take the sequence (1, 2, 3, 4, 5) and remove the third element from it, we obtain the sequence (1, 2, 4, 5)). However, as Mike is awful at climbing, he wants the final difficulty (i.e. the maximum difference of heights between adjacent holds after removing the hold) to be as small as possible among all possible options of removing a hold. The first and last holds must stay at their positions.
 
