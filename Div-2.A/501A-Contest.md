@@ -24,8 +24,6 @@ Output on a single line:
 
 **Input**
 
-==:
-
     500 1000 20 30
 
     1000 1000 1 1
@@ -34,8 +32,6 @@ Output on a single line:
 
 **Output**
 
-==:
-
     Vasya
 
     Tie
@@ -43,8 +39,6 @@ Output on a single line:
     Misha
 
 **CPP CODE**
-
-==:
 
     #include <bits/stdc++.h>
     using namespace std;
