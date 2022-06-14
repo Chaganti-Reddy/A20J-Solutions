@@ -22,40 +22,28 @@ Print a single number — the minimum difficulty of the track after removing a s
 
 **Input**
 
-==:
-
     3
     1 4 6
 
 **Output**
 
-==:
-
     5
 
 **Input**
-
-==:
 
     5
     1 2 3 4 5
 
 **Output**
 
-==:
-
     2
 
 **Input**
-
-==:
 
     5
     1 2 3 7 8
 
 **Output**
-
-==:
 
     4
 
@@ -68,8 +56,6 @@ Print a single number — the minimum difficulty of the track after removing a s
 > In the third test you can obtain sequences (1, 3, 7, 8), (1, 2, 7, 8), (1, 2, 3, 8), for which the difficulty is 4, 5 and 5, respectively. Thus, after removing the second element we obtain the optimal answer — 4.
 
 **CPP CODE**
-
-==:
 
     #include <iostream>
     using namespace std;
