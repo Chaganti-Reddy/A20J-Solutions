@@ -1,4 +1,4 @@
-# Table of Contents
+# Contest
 
 Misha and Vasya participated in a Codeforces contest. Unfortunately, each of them solved only one problem, though successfully submitted it at the first attempt. Misha solved the problem that costs a points and Vasya solved the problem that costs b points. Besides, Misha submitted the problem c minutes after the contest started and Vasya submitted the problem d minutes after the contest started. As you know, on Codeforces the cost of a problem reduces as a round continues. That is, if you submit a problem that costs p points t minutes after the contest started, you get $\max(\frac{3p}{10}, p - \frac{p}{250}.t)$ points.
 
