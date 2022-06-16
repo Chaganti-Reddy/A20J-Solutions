@@ -10,7 +10,7 @@ More specifically, you need to find three numbers (a, b, c), such that l �
 
 *Input*
 
-The single line contains two positive space-separated integers l, r (1 ≤ l ≤ r ≤ 1018; r - l ≤ 50).
+The single line contains two positive space-separated integers l, r (1 ≤ l ≤ r ≤ 10^18; r - l ≤ 50).
 
 *Output*
 

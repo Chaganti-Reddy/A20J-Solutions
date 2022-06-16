@@ -1,4 +1,4 @@
-# Table of Contents
+# Minumum Difficulty
 
 Mike is trying rock climbing but he is awful at it.
 

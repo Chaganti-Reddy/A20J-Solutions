@@ -8,9 +8,9 @@ Unfortunately, Valera has only v units of money. Help him to determine which of 
 
 *Input*
 
-The first line contains two space-separated integers n, v (1 ≤ n ≤ 50; 104 ≤ v ≤ 106) — the number of sellers and the units of money the Valera has.
+The first line contains two space-separated integers n, v (1 ≤ n ≤ 50; 10^4 ≤ v ≤ 10^6) — the number of sellers and the units of money the Valera has.
 
-Then n lines follow. The i-th line first contains integer ki (1 ≤ ki ≤ 50) the number of items of the i-th seller. Then go ki space-separated integers si1, si2, ..., siki (104 ≤ sij ≤ 106) — the current prices of the items of the i-th seller.
+Then n lines follow. The i-th line first contains integer ki (1 ≤ ki ≤ 50) the number of items of the i-th seller. Then go ki space-separated integers si1, si2, ..., siki (10^4 ≤ sij ≤ 10^6) — the current prices of the items of the i-th seller.
 
 *Output*
 

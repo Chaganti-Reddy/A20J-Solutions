@@ -8,7 +8,7 @@ Your task is to find the value of the maximum joy the Rabbits can get from the l
 
 *Input*
 
-The first line contains two space-separated integers — n (1 ≤ n ≤ 104) and k (1 ≤ k ≤ 109) — the number of restaurants in the Rabbits' list and the time the coach has given them to lunch, correspondingly. Each of the next n lines contains two space-separated integers — fi (1 ≤ fi ≤ 109) and ti (1 ≤ ti ≤ 109) — the characteristics of the i-th restaurant.
+The first line contains two space-separated integers — n (1 ≤ n ≤ 10^4) and k (1 ≤ k ≤ 10^9) — the number of restaurants in the Rabbits' list and the time the coach has given them to lunch, correspondingly. Each of the next n lines contains two space-separated integers — fi (1 ≤ fi ≤ 10^9) and ti (1 ≤ ti ≤ 10^9) — the characteristics of the i-th restaurant.
 
 *Output*
 

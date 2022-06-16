@@ -43,10 +43,6 @@ p43s
 *CPP CODE*
 
 #+BEGIN_SRC CPP
-#include<iostream>
-using namespace std ;
-
-int main()
 #include <bits/stdc++.h>
 using namespace std;
 
