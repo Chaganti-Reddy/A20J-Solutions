@@ -11,9 +11,9 @@ Determine, what is the minimum number of minutes of the movie you have to watch 
 
 *Input*
 
-The first line contains two space-separated integers n, x (1 ≤ n ≤ 50, 1 ≤ x ≤ 105) — the number of the best moments of the movie and the value of x for the second button.
+The first line contains two space-separated integers n, x (1 ≤ n ≤ 50, 1 ≤ x ≤ 10^5) — the number of the best moments of the movie and the value of x for the second button.
 
-The following n lines contain the descriptions of the best moments of the movie, the i-th line of the description contains two integers separated by a space li, ri (1 ≤ li ≤ ri ≤ 105).
+The following n lines contain the descriptions of the best moments of the movie, the i-th line of the description contains two integers separated by a space li, ri (1 ≤ li ≤ ri ≤ 10^5).
 
 It is guaranteed that for all integers i from 2 to n the following condition holds: ri - 1 < li.
 
