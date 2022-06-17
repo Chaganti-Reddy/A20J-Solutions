@@ -1,0 +1,96 @@
+#+title: Yaroslav and Permutations
+
+Yaroslav has an array that consists of n integers. In one second Yaroslav can swap two neighboring array elements. Now Yaroslav is wondering if he can obtain an array where any two neighboring elements would be distinct in a finite time.
+
+Help Yaroslav.
+
+*Input*
+
+The first line contains integer n (1 ≤ n ≤ 100) — the number of elements in the array. The second line contains n integers a1, a2, ..., an (1 ≤ ai ≤ 1000) — the array elements.
+
+*Output*
+
+In the single line print "YES" (without the quotes) if Yaroslav can obtain the array he needs, and "NO" (without the quotes) otherwise.
+
+*Examples*
+
+*Input*
+
+#+begin_src txt
+1
+1
+#+end_src
+
+*Output*
+
+#+begin_src txt
+YES
+#+end_src
+
+*Input*
+
+#+begin_src txt
+3
+1 1 2
+#+end_src
+
+*Output*
+
+#+begin_src txt
+YES
+#+end_src
+
+*Input*
+
+#+begin_src txt
+4
+7 7 7 7
+#+end_src
+
+*Output*
+
+#+begin_src txt
+NO
+#+end_src
+
+#+begin_quote
+*Note*
+
+In the first sample the initial array fits well.
+
+In the second sample Yaroslav can get array: 1, 2, 1. He can swap the last and the second last elements to obtain it.
+
+In the third sample Yarosav can't get the array he needs.
+#+end_quote
+
+
+*CPP CODE*
+
+#+BEGIN_SRC C++
+#include <algorithm>
+#include <iostream>
+
+using namespace std;
+
+int main() {
+  int n, a[100];
+  cin >> n;
+  for (int i = 0; i < n; ++i) {
+    cin >> a[i];
+  }
+  sort(a, a + n);
+  int continuous(1), max_continuous(1);
+  for (int i = 1; i < n; ++i) {
+    if (a[i] == a[i - 1]) {
+      continuous += 1;
+      if (continuous > max_continuous) {
+        max_continuous = continuous;
+      }
+    } else {
+      continuous = 1;
+    }
+  }
+  cout << (max_continuous <= (n + 1) / 2 ? "YES" : "NO") << endl;
+  return 0;
+}
+#+END_SRC
