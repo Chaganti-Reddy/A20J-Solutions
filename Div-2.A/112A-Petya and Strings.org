@@ -54,7 +54,7 @@ AbCdEfF
 
 *CPP CODE*
 
-#+BEGIN_SRC CPP
+#+BEGIN_SRC C
 #include <bits/stdc++.h>
 using namespace std;
 
