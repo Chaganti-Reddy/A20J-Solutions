@@ -36,7 +36,7 @@ WE ARE THE CHAMPIONS MY FRIEND
 
 *CPP CODE*
 
-#+BEGIN_SRC CPP
+#+BEGIN_SRC C++
 #include <iostream>
 using namespace std;
 
