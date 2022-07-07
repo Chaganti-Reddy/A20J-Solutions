@@ -7,7 +7,7 @@ There are n holds on the wall, i-th hold is at height ai off the ground. Besides
 Today Mike decided to cover the track with holds hanging on heights a1, &#x2026;, an. To make the problem harder, Mike decided to remove one hold, that is, remove one element of the sequence (for example, if we take the sequence (1, 2, 3, 4, 5) and remove the third element from it, we obtain the sequence (1, 2, 4, 5)). However, as Mike is awful at climbing, he wants the final difficulty (i.e. the maximum difference of heights between adjacent holds after removing the hold) to be as small as possible among all possible options of removing a hold. The first and last holds must stay at their positions.
 
 Help Mike determine the minimum difficulty of the track after removing one hold.
-
+ 
 **Input**
 
 The first line contains a single integer n (3 ≤ n ≤ 100) — the number of holds.
