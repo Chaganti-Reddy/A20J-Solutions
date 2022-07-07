@@ -8,7 +8,7 @@ You have decided to watch the best moments of some movie. There are two buttons 
 Initially the movie is turned on in the player on the first minute, and you want to watch exactly n best moments of the movie, the i-th best moment starts at the li-th minute and ends at the ri-th minute (more formally, the i-th best moment consists of minutes: li, li + 1, ..., ri).
 
 Determine, what is the minimum number of minutes of the movie you have to watch if you want to watch all the best moments?
-
+ 
 *Input*
 
 The first line contains two space-separated integers n, x (1 ≤ n ≤ 50, 1 ≤ x ≤ 10^5) — the number of the best moments of the movie and the value of x for the second button.
