@@ -10,7 +10,7 @@ The first line contains four integers a, b, c, d (250 ≤ a, b ≤ 350
 
 It is guaranteed that numbers a and b are divisible by 250 (just like on any real Codeforces round).
 
-**Output**
+**Output** 
 
 Output on a single line:
 
