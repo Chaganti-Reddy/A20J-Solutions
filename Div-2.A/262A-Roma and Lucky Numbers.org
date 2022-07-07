@@ -18,7 +18,7 @@ In a single line print a single integer — the answer to the problem.
 
 *Examples*
 
-*Input*
+*Input* 
 
 #+begin_src txt
 3 4
