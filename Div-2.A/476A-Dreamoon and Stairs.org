@@ -13,7 +13,7 @@ The single line contains two space separated integers n, m (0 < n ≤ 10
 Print a single integer — the minimal number of moves being a multiple of m. If there is no way he can climb satisfying condition print  - 1 instead.
 
 *Examples*
-
+ 
 *Input*
 
 #+begin_src txt
