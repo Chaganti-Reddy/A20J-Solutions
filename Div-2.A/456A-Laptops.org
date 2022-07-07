@@ -4,7 +4,7 @@ One day Dima and Alex had an argument about the price and quality of laptops. Di
 
 Please, check the guess of Alex. You are given descriptions of n laptops. Determine whether two described above laptops exist.
 
-*Input*
+*Input* 
 
 The first line contains an integer n (1 ≤ n ≤ 10^5) — the number of laptops.
 
