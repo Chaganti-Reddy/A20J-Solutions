@@ -41,5 +41,30 @@ Output two integers — indexes of *neighbouring* soldiers, who should form a re
 *CPP CODE*
 
 #+BEGIN_SRC C++
+#include <bits/stdc++.h>
+#include <climits>
+using namespace std;
 
+int main() {
+  int n, l = 0, r = 0;
+  cin >> n;
+  int a[n];
+  for (int i = 0; i < n; ++i) {
+    cin >> a[i];
+  }
+  int diff = INT_MAX;
+  for (int i = 0; i < n - 1; ++i) {
+    if (diff >= abs(a[i + 1] - a[i])) {
+      r = i + 2;
+      l = i + 1;
+      diff = abs(a[i + 1] - a[i]);
+    }
+  }
+  if (diff >= abs(a[n - 1] - a[0])) {
+    l = n;
+    r = 1;
+    diff = abs(a[n - 1] - a[0]);
+  }
+  cout << l << " " << r << "\n";
+}
 #+END_SRC
